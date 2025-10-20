@@ -190,3 +190,46 @@ body {
 .smart-watch-banner .buyNowButton:hover {
 	background-color: #563434;
 }
+
+.testimonialParentContainer{
+  padding-top: 100px;
+  
+  .testimonialInnerContainer{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    .testimonialCards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      padding: 40px 20px 40px;
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s;
+      min-width: 250px;
+      margin-bottom: 30px;
+      flex-basis: 30%;
+
+      .testimonialcontent{
+        color: #777;
+        font-size: 14px;
+        margin: 12px 0px;
+
+      }
+      .Rating{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+    }
+
+  }
+}
