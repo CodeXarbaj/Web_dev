@@ -1,125 +1,192 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
 }
 
 .header {
-	background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 
-	.container {
-		max-width: 1300px;
-		margin: auto;
-		padding: 0px 25px;
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 25px;
 
-		.navbar {
-			display: flex;
-			align-items: center;
-			padding: 25px;
-			justify-content: flex-end;
-			gap: 20px;
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 25px;
+      justify-content: flex-end;
+      gap: 20px;
 
-			a {
-				text-decoration: none;
-				color: #555;
-			}
-		}
+      a {
+        text-decoration: none;
+        color: #555;
+      }
+    }
 
-		.headerContent {
-			margin-top: 70px;
-			display: flex;
-			align-items: center;
+    .headerContent {
+      margin-top: 70px;
+      display: flex;
+      align-items: center;
 
-			.headerContentItem {
-				flex: 1;
-				h1 {
-					font-size: 50px;
-					line-height: 60px;
-					margin: 25px 0px;
-				}
-				p {
-					color: #555;
-				}
-				img {
-					width: 100%;
-					padding: 50px 0px;
-				}
-			}
-		}
-	}
+      .headerContentItem {
+        flex: 1;
+        h1 {
+          font-size: 50px;
+          line-height: 60px;
+          margin: 25px 0px;
+        }
+        p {
+          color: #555;
+        }
+        img {
+          width: 100%;
+          padding: 50px 0px;
+        }
+      }
+    }
+  }
 }
 
-.categories{
-    margin: 70px 0px;
+.categories {
+  margin: 70px 0px;
 
-    .container
-    {
-        max-width: 1080px;
-        margin: auto;
-        padding: 0px 25px;
-        display: flex;
-       flex-wrap:wrap;
-        justify-content: space-around;
+  .container {
+    max-width: 1080px;
+    margin: auto;
+    padding: 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
-          img{
-        flex-basis: 30%;
-        min-width: 250px;
-        }
-
+    img {
+      flex-basis: 30%;
+      min-width: 250px;
     }
+  }
 }
 
 .feature-products {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0px 25px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    color: #555;
+    line-height: 60px;
+
+    text-align: center;
+  }
+
+  .Product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 200px;
+      padding: 10px;
+      margin-bottom: 50px;
+      flex-basis: calc(25% - 20px);
+      margin-bottom: 50px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+
+      .product-title {
+        color: #555;
+      }
+
+      .product-pricing {
+        color: #555;
+        font-size: 14px;
+      }
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
+
+.smart-watch-banner {
+	margin-top: 80px;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 30px 0px;
+}
+
+.smart-watch-banner .container {
+	display: flex;
+	flex-wrap: wrap;
 	max-width: 1080px;
 	margin: auto;
 	padding: 0px 25px;
-	display: flex;
-	flex-direction: column;
-
-	h2 {
-		color: #555;
-		line-height: 60px;
-
-		text-align: center;
-	}
-
-    .Product-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        .product-card{
-            display: flex;
-            flex-direction: column;
-			min-width: 200px;
-			padding: 10px;
-			margin-bottom: 50px;
-            flex-basis: calc(25% - 20px);
-			margin-bottom: 50px;
-			cursor: pointer;
-			transition: transform 0.5s ease;
-
-
-            .product-title {
-				color: #555;
-			}
-
-			.product-pricing {
-				color: #555;
-				font-size: 14px;
-			}
-
-        }
-            .product-card:hover {
-             transform: translateY(-5px);
-                 
-        }
-    }
+	justify-content: space-around;
+	align-items: center;
 }
 
+/* Image Section */
+.smart-watch-banner .smart-watch-img-container {
+	flex: 1;
+	padding: 50px;
+}
 
+.smart-watch-banner .smart-watch-img-container img {
+	width: 100%;
+}
 
+/* ===== Content Section ===== */
+.smart-watch-banner .smart-watch-banner-content {
+	flex: 1;
+}
 
+/* Each line separated */
+.smart-watch-banner .smart-watch-banner-title,
+.smart-watch-banner .smart-watch-banner-Subtitle {
+	display: block; /* 👈 Force new line */
+}
+
+/* Title */
+.smart-watch-banner .smart-watch-banner-title {
+	color: #555;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+/* Subtitle */
+.smart-watch-banner .smart-watch-banner-Subtitle {
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0px;
+	font-weight: bold;
+}
+
+/* Description */
+.smart-watch-banner .smart-watch-banner-description {
+	color: #555;
+	font-size: 14px;
+}
+
+/* Button Style */
+.smart-watch-banner .buyNowButton {
+	background: #ff523b;
+	color: #fff;
+	margin: 30px 0px;
+	padding: 8px 30px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.smart-watch-banner .buyNowButton:hover {
+	background-color: #563434;
+}
